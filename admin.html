@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel do Administrador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Painel do Administrador</h1>
+            <nav>
+                <a href="index.html">Logout</a>
+                <a href="qa.html" class="secondary-link">Ver perguntas</a>
+                <a href="#" id="change-password-link">Alterar senha</a>
+            </nav>
+        </header>
+        <section class="form-section">
+            <h2>Adicionar nova pergunta</h2>
+            <form id="qa-form">
+                <label for="question">Pergunta:</label>
+                <input type="text" id="question" required>
+                <label for="answer">Resposta:</label>
+                <textarea id="answer" rows="4" required></textarea>
+                <button type="submit">Adicionar</button>
+            </form>
+        </section>
+        <section class="qa-list-section">
+            <h2>Perguntas e Respostas Cadastradas</h2>
+            <div id="qa-list"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

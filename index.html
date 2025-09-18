@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Perguntas – Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Área de Acesso</h1>
+        <p>Faça login como administrador para adicionar perguntas e respostas ou entre como visitante para apenas visualizar.</p>
+        <form id="login-form">
+            <label for="password">Senha do administrador:</label>
+            <input type="password" id="password" required>
+            <button type="submit">Entrar como administrador</button>
+        </form>
+        <button id="guest-btn" class="secondary">Entrar como visitante</button>
+        <p id="login-error" class="error" style="display:none;">Senha incorreta. Tente novamente.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
